@@ -20,5 +20,10 @@ Preliminary results indicate that the contrast agent-free approach could become 
 ## Usage
 Detailed information about the implementation of this method and the usage guidelines are provided within this repository.
 
+```
+python3 train_pre2art.py --image_size 256 --exp exp_syndiff --num_channels 2 --num_channels_dae 64 --ch_mult 1 1 2 2 4 4 --num_timesteps 4 --num_res_blocks 2 --batch_size 1 --contrast1 PRE --contrast2 ART --num_epoch 500 --ngf 64 --embedding_type positional --use_ema --ema_decay 0.999 --r1_gamma 1. --z_emb_dim 256 --lr_d 1e-4 --lr_g 1.6e-4 --lazy_reg 10 --num_process_per_node 4 --save_content --local_rank 0 --input_path ../../seo
+```
+
+
 ## Contribution
 We welcome contributions from the community. Whether you are a radiologist, medical imaging expert, or someone interested in the application of AI in healthcare, your insights and input could be invaluable.
